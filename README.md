@@ -71,14 +71,14 @@ No configuration is required — the ecosystems are detected from `go.mod`.
 
 ```bash
 # full scan
-go run github.com/topolink/topolink/cmd/topolink@v1 -repo . -format markdown
+go run github.com/topolink/topolink/cmd/topolink@v0.2.0 -repo . -format markdown
 
 # with the pre-built semantic cache (adds business meaning + weak-auth detection)
-go run github.com/topolink/topolink/cmd/topolink@v1 -repo . \
+go run github.com/topolink/topolink/cmd/topolink@v0.2.0 -repo . \
   -semantic testdata/semantic.json -format markdown
 
 # diff-driven blast radius
-go run github.com/topolink/topolink/cmd/topolink@v1 -repo . \
+go run github.com/topolink/topolink/cmd/topolink@v0.2.0 -repo . \
   -diff-file testdata/change.patch -format markdown
 ```
 
@@ -132,7 +132,7 @@ Example output (14 findings):
 To regenerate it with a real model:
 
 ```bash
-OPENAI_API_KEY=sk-... go run github.com/topolink/topolink/cmd/topolink@v1 -repo . \
+OPENAI_API_KEY=sk-... go run github.com/topolink/topolink/cmd/topolink@v0.2.0 -repo . \
   -semantic testdata/semantic.json -ai-model gpt-4o-mini
 ```
 
@@ -143,7 +143,7 @@ The cache is keyed by a content fingerprint, so unchanged code is never re-sent 
 `testdata/change.patch` modifies `OrderService.RefundOrder`. With `-diff-file`, Topolink narrows the report to the entries reachable from that change:
 
 ```bash
-go run github.com/topolink/topolink/cmd/topolink@v1 -repo . \
+go run github.com/topolink/topolink/cmd/topolink@v0.2.0 -repo . \
   -diff-file testdata/change.patch -format markdown
 ```
 
