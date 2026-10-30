@@ -1,0 +1,403 @@
+{
+  "version": "1",
+  "units": {
+    "entry:grpc:OrderService": {
+      "kind": "entry",
+      "fingerprint": "sha256:9a269261c58ca28751ddd717c099193f87c3403e4592d7bbe090c19b225d9e2f",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "cmd/api/main.go",
+            "Line": 56,
+            "Column": 10
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "entry:http:GET:/api/v1/admin/orders": {
+      "kind": "entry",
+      "fingerprint": "sha256:8eee2b0a613f1f48dfa16fe8e05176545093b05da85eb2c7931afc579a506c09",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/router.go",
+            "Line": 45,
+            "Column": 8
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "entry:http:GET:/api/v1/catalog": {
+      "kind": "entry",
+      "fingerprint": "sha256:4c2602488ab52d6366fd2247ea538c4c3402d0ce1d967f6a2b1d2c4de4f0748a",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/router.go",
+            "Line": 33,
+            "Column": 4
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "entry:http:GET:/api/v1/orders": {
+      "kind": "entry",
+      "fingerprint": "sha256:908badea39fc4720b529d2613bb4083b356ec60b5ebc3fef32fe1bd9b68e017a",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/router.go",
+            "Line": 37,
+            "Column": 5
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "entry:http:GET:/api/v1/orders/:id": {
+      "kind": "entry",
+      "fingerprint": "sha256:901e9685c662c8c46532ef4354e1c2f64f30bee595dc33a0b8a7ddc0af2e44f6",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/router.go",
+            "Line": 39,
+            "Column": 5
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "entry:http:GET:/healthz": {
+      "kind": "entry",
+      "fingerprint": "sha256:4e13201f32263b76fc468734e1a1530138e61c74fad4c0453584b815b9e8db60",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/router.go",
+            "Line": 29,
+            "Column": 4
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "entry:http:GET:/legacy/orders": {
+      "kind": "entry",
+      "fingerprint": "sha256:9e7d9a5e1e562fd149c89e4d657aa4673c5671e135385b2f59891ba9651f0be6",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/router.go",
+            "Line": 52,
+            "Column": 9
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "entry:http:GET:/readyz": {
+      "kind": "entry",
+      "fingerprint": "sha256:8fa2bd9461b91f6570bcf99e7a7132a36c74ce48c77f39d5a142abbf37ba7de8",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/router.go",
+            "Line": 30,
+            "Column": 4
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "entry:http:POST:/api/v1/admin/orders/bulk-status": {
+      "kind": "entry",
+      "fingerprint": "sha256:33918f65fdcdfd61a7953a7dc58c4bd57408f1c780f5cf04f2afd2a615e119c3",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/router.go",
+            "Line": 46,
+            "Column": 8
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "entry:http:POST:/api/v1/admin/settlement/run": {
+      "kind": "entry",
+      "fingerprint": "sha256:0f616d1f57c67b20173772a71172160103c73b2d87b3388fe06743bb86d96637",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/router.go",
+            "Line": 47,
+            "Column": 8
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "entry:http:POST:/api/v1/orders": {
+      "kind": "entry",
+      "fingerprint": "sha256:802ba1dd21f8aa1f90f82ab3501781d435d6782c251dce630e2812e56e46338b",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/router.go",
+            "Line": 38,
+            "Column": 5
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "entry:http:POST:/api/v1/orders/:id/cancel": {
+      "kind": "entry",
+      "fingerprint": "sha256:14f4458eadc1a7e2b9e73137bebc2ac0cc35833716042a2ee8aceb564cd48d80",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/router.go",
+            "Line": 40,
+            "Column": 5
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "entry:http:POST:/api/v1/orders/:id/refund": {
+      "kind": "entry",
+      "fingerprint": "sha256:73d27638810c795bb345b752e52d62314602f369f1ec7b40a0c357563ecc51cb",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/router.go",
+            "Line": 41,
+            "Column": 5
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "entry:kafka:Consume": {
+      "kind": "entry",
+      "fingerprint": "sha256:783543d81f422f283f23e59b9b3eb3cf75c92314de1509ea0e3374585b6eea38",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business entry point",
+        "evidence": [
+          {
+            "File": "internal/event/payment_consumer.go",
+            "Line": 51,
+            "Column": 27
+          }
+        ],
+        "confidence": 0.88,
+        "model": "mock"
+      }
+    },
+    "middleware:AccessLog": {
+      "kind": "middleware",
+      "fingerprint": "sha256:a2832f9ad177d5d171c063f44f88e60ac1d3e61986e4e1363b88fed9e2a39b80",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business unit",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/middleware.go",
+            "Line": 33,
+            "Column": 0
+          }
+        ],
+        "confidence": 0.8,
+        "model": "mock"
+      }
+    },
+    "middleware:Auth": {
+      "kind": "middleware",
+      "fingerprint": "sha256:213b40974c82399fda8cfb720d1fda076cf022bec6a35fc59e2391ce7476f87c",
+      "annotation": {
+        "kind": "middleware-purpose",
+        "text": "JWT authentication guard with tenant isolation",
+        "effects": [
+          {
+            "condition": "missing bearer token",
+            "action": "abort 401",
+            "business": "rejects anonymous requests"
+          },
+          {
+            "condition": "invalid or expired token",
+            "action": "abort 401",
+            "business": "rejects forged or stale credentials"
+          },
+          {
+            "condition": "tenant mismatch",
+            "action": "abort 403",
+            "business": "prevents cross-tenant data access"
+          }
+        ],
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/middleware.go",
+            "Line": 48,
+            "Column": 0
+          }
+        ],
+        "confidence": 0.96,
+        "model": "mock"
+      }
+    },
+    "middleware:LegacyAuth": {
+      "kind": "middleware",
+      "fingerprint": "sha256:49a4140e0c427afec0e5ac9d2402087ca39216c0022d5a7f9f50b99b510452de",
+      "annotation": {
+        "kind": "middleware-purpose",
+        "text": "Legacy auth shim that only logs a missing token",
+        "effects": [
+          {
+            "condition": "missing token",
+            "action": "log and continue",
+            "business": "request proceeds without authentication"
+          }
+        ],
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/middleware.go",
+            "Line": 89,
+            "Column": 0
+          }
+        ],
+        "confidence": 0.93,
+        "model": "mock"
+      }
+    },
+    "middleware:Recovery": {
+      "kind": "middleware",
+      "fingerprint": "sha256:04d5f7a5f312089d9dc18b7331f0e09a935049fa8b9f4a5b908b59ae40aacfc9",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business unit",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/router.go",
+            "Line": 29,
+            "Column": 4
+          }
+        ],
+        "confidence": 0.8,
+        "model": "mock"
+      }
+    },
+    "middleware:RequestID": {
+      "kind": "middleware",
+      "fingerprint": "sha256:46c9188981303c9487573c2690913bc2a80b352ea5c4e0a5d71654237a5fbc43",
+      "annotation": {
+        "kind": "middleware-purpose",
+        "text": "Propagates a request id for tracing",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/middleware.go",
+            "Line": 20,
+            "Column": 0
+          }
+        ],
+        "confidence": 0.9,
+        "model": "mock"
+      }
+    },
+    "middleware:RequireRole": {
+      "kind": "middleware",
+      "fingerprint": "sha256:3f07dd3bac20f33b0ffa837cdce78caf3bd7e7f785b59eb4aa521dc2dc670e20",
+      "annotation": {
+        "kind": "business-impact",
+        "text": "Business unit",
+        "evidence": [
+          {
+            "File": "internal/transport/httpapi/middleware.go",
+            "Line": 77,
+            "Column": 0
+          }
+        ],
+        "confidence": 0.8,
+        "model": "mock"
+      }
+    },
+    "table:accounts": {
+      "kind": "table",
+      "fingerprint": "sha256:fe7784c59b060c2915b29f965c77e0ba67a0b006d6d2c1ebe6c0beef2ac251d0",
+      "annotation": {
+        "kind": "data-sensitivity",
+        "text": "Customer account balances; financial ledger data",
+        "evidence": [
+          {
+            "File": "internal/repository/ledger.go",
+            "Line": 23,
+            "Column": 12
+          }
+        ],
+        "confidence": 0.97,
+        "model": "mock"
+      }
+    },
+    "table:settlements": {
+      "kind": "table",
+      "fingerprint": "sha256:8cef0e70b5722aacace0b24737aba8f8da6650640635d8041af563cdd3119874",
+      "annotation": {
+        "kind": "data-sensitivity",
+        "text": "Settlement batches reconciled with the payment provider",
+        "evidence": [
+          {
+            "File": "internal/repository/ledger.go",
+            "Line": 45,
+            "Column": 9
+          }
+        ],
+        "confidence": 0.95,
+        "model": "mock"
+      }
+    }
+  }
+}

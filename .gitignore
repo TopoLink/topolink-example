@@ -1,0 +1,10 @@
+/bin/
+*.out
+coverage.txt
+.env
+.env.*
+!.env.example
+.topolink/
+.DS_Store
+.idea/
+.vscode/
