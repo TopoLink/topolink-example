@@ -13,7 +13,7 @@ consumer:
 	go run ./cmd/consumer
 
 topolink:
-	go run github.com/topolink/topolink/cmd/topolink@v0.2.0 -repo . -format markdown
+	go run github.com/topolink/topolink/cmd/topolink@v0.3.0 -repo . -format markdown
 
 verify:
 	./scripts/verify.sh

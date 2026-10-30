@@ -2,7 +2,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-tool="${TOPOLINK:-go run github.com/topolink/topolink/cmd/topolink@v0.2.0}"
+tool="${TOPOLINK:-go run github.com/topolink/topolink/cmd/topolink@v0.3.0}"
 
 # The semantic fixture is read-only; work on a copy so the committed cache is
 # never rewritten by a CI run.
