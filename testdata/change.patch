@@ -1,0 +1,7 @@
+diff --git a/internal/service/order.go b/internal/service/order.go
+index 52d48cc..2d737e9 100644
+--- a/internal/service/order.go
++++ b/internal/service/order.go
+@@ -151 +151 @@ func (s *OrderService) RefundOrder(ctx context.Context, userID, orderID int64) e
+-		if err := s.gateway.Refund(orderID, 0, o.Total); err != nil {
++		if err := s.gateway.Refund(orderID, o.ID, o.Total); err != nil {
