@@ -6,7 +6,7 @@ It is deliberately a normal service — layered packages, JWT auth, gRPC, Kafka,
 
 > ⚠️ The service intentionally contains anti-patterns (full-table updates, remote calls inside transactions, weak legacy auth). Do **not** copy it into production.
 
-[![Go](https://img.shields.io/badge/go-1.23-blue)](https://go.dev/)
+[![Go](https://img.shields.io/badge/go-1.25-blue)](https://go.dev/)
 [![Analyzed by Topolink](https://img.shields.io/badge/analyzed%20by-Topolink-22d3ee)](https://github.com/TopoLink/topolink)
 
 ## Stack
